@@ -1,0 +1,19 @@
+{
+  "name": "tailwind-handson",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build-css": "tailwindcss build -i  ./src/style.css -o ./public/style.css --watch",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "tw-elements": "^1.0.0-beta1"
+  }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+      *{
+        font-family: 'Shantell Sans', cursive;
+      }
+      .astro{
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      .bounce-1 {
+            animation-name: bounce-1;
+            animation-timing-function: linear;
+      }
+      @keyframes bounce-1 {
+          0%   { transform: translateY(0); }
+          50%  { transform: translateY(-10px); }
+          100% { transform: translateY(0); }
+      }
+      .wi-80{
+        width: 80%;
+      }
+      .all-center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+      }
+
+    </style>
+	</head>
+	<body class="text-white bg-black bg-opacity-75">
+
+    <div class="navbar pb-20">
+      <!-- just for adding padding from top or might add navbar in future -->
+    </div>
+
+		<div class="about-page">
+      <div class="container mx-auto">
+
+        <div class="grid-container grid md:grid-cols-4 md:py-0 py-5">
+
+          <div class="md:col-span-3 text-center my-auto">
+            <h3 class="py-30 text-5xl"><span class="text-red-500">A</span>rth <span class="text-red-500">P</span>rajapati</h3>
+            <p class="py-10 text-2xl px-20">Howdy There, I'm <span class="font-bold">Arth Prajapti</span>. A Computer Geek who can talk all day about Computers. Are you Computer Geek too? Ping me <span><a href="#contact-page">Here</a>.</span></p>
+          </div>
+
+          <div class="md:col-span-1">
+            <img class="pt-5 astro bounce-1" src="./public/astro.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- horizontal line under div -->
+      <hr class="w-48 h-0.5 opacity-40 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+    </div>
+
+    <div class="skills-page py-10">
+      <div class="container mx-auto text-lg">
+        <h3 class="text-3xl text-center">This is what i've been learning till now</h3>
+        <div class="flex justify-around text-center py-4 text-2xl">
+
+          <ul class="list-none">
+            <li class="py-1 hover:list-disc">Python</li>
+            <li class="py-1 hover:list-disc">C++</li>
+            <li class="py-1 hover:list-disc">Problem-Solving</li>
+            <li class="py-1 hover:list-disc">Docker</li>
+          </ul>
+          <ul class="list-none">
+            <li class="py-1 hover:list-disc">React</li>
+            <li class="py-1 hover:list-disc">Linux</li>
+            <li class="py-1 hover:list-disc">DSA</li>
+            <li class="py-1 hover:list-disc">Git</li>
+          </ul>
+          <ul class="list-none">
+            <li class="py-1 hover:list-disc">DBMS</li>
+            <li class="py-1 hover:list-disc">HTML</li>
+            <li class="py-1 hover:list-disc">CSS</li>
+            <li class="py-1 hover:list-disc">TailWind</li>
+          </ul>
+        </div>
+
+        <div class="paragraphs text-center pt-36 text-xl">
+          <p class="py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsa tempore excepturi nulla accusantium? Nihil minima consequatur illo reprehenderit accusantium autem nulla ipsum rem incidunt, ea mollitia tempora cupiditate minus dicta? Neque, nostrum iusto!</p>
+          <p class="py-2 hidden md:block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsa tempore excepturi nulla accusantium? Nihil minima consequatur illo reprehenderit accusantium autem nulla ipsum rem incidunt, ea mollitia tempora cupiditate minus dicta? Neque, nostrum iusto!</p>
+        </div>
+      </div>
+      <hr class="w-48 h-0.5 opacity-40 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+    </div>
+
+
+    <div class="education-page text-2xl py-10">
+      <div class="wi-80 mx-auto">
+        <h3 class="text-center text-3xl">So, this is how it has been till now...</h3>
+      <ol class="border-l border-neutral-300 dark:border-neutral-500">
+        <li>
+          <div class="flex-start flex items-center pt-3">
+            <div
+              class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"></div>
+            <p class="text-sm text-neutral-500 dark:text-neutral-300">
+              01.02.2023
+            </p>
+          </div>
+          <div class="mt-2 ml-4 mb-6">
+            <h4 class="mb-1.5 text-xl font-semibold">Trainee At RadixWeb</h4>
+            <p class="mb-3 text-neutral-500 dark:text-neutral-300">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              scelerisque diam non nisi semper, et elementum lorem ornare.
+              Maecenas placerat facilisis mollis. Duis sagittis ligula in
+              sodales vehicula.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="flex-start flex items-center pt-2">
+            <div
+              class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"></div>
+            <p class="text-sm text-neutral-500 dark:text-neutral-300">
+              13.06.2019
+            </p>
+          </div>
+          <div class="mt-2 ml-4 mb-6">
+            <h4 class="mb-1.5 text-xl font-semibold">Student At GEC Patan</h4>
+            <p class="mb-3 text-neutral-500 dark:text-neutral-300">
+              Libero expedita explicabo eius fugiat quia aspernatur autem
+              laudantium error architecto recusandae natus sapiente sit nam
+              eaque, consectetur porro molestiae ipsam an deleniti.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="flex-start flex items-center pt-2">
+            <div
+              class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500"></div>
+            <p class="text-sm text-neutral-500 dark:text-neutral-300">
+              25.6.2017
+            </p>
+          </div>
+          <div class="mt-2 ml-4 pb-5">
+            <h4 class="mb-1.5 text-xl font-semibold">Student at SP Vidhyalaya</h4>
+            <p class="mb-3 text-neutral-500 dark:text-neutral-300">
+              Voluptatibus temporibus esse illum eum aspernatur, fugiat suscipit
+              natus! Eum corporis illum nihil officiis tempore. Excepturi illo
+              natus libero sit doloremque, laborum molestias rerum pariatur quam
+              ipsam necessitatibus incidunt, explicabo.
+            </p>
+          </div>
+        </li>
+      </ol>
+      </div>
+      <hr class="w-48 h-0.5 opacity-40 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+    </div>
+
+    <div id="contact-page" class="contact-page">
+      <div class="container mx-auto h-screen relative">
+          <div class="all-center">
+            <h3 class="text-center text-3xl py-3">Let's Talk</h3>
+            <form action="" method="post">
+              <div class="py-4">
+                <input
+                type="text"
+                class="w-full border rounded-xl"
+                id="exampleFormControlInputText"
+                placeholder="Type your name..." required />
+              </div>
+              <div class="py-4">
+                <input
+                type="email"
+                class="w-full border rounded-xl"
+                id="exampleFormControlInputText"
+                placeholder="Type your Email..." required/>
+              </div>
+              <div class="py-4">
+                <textarea
+                type="text"
+                class="w-full border rounded-xl"
+                id="exampleFormControlInputText"
+                placeholder="Write down the message..." required></textarea>
+              </div>
+              <div class="py-4 text-center">
+                <button class="border-0 rounded-xl px-5 hover:border">Send me</button>
+              </div>
+            </form>
+          </div>
+      </div>
+      <hr class="w-48 h-0.5 opacity-40 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+    </div>
+
+     <div class="footer">
+      <div class="container mx-auto">
+        <div class="copyright text-center">
+          <p>© Arth Prajapati. All rights reserved.</p>
+        </div>
+      </div>
+     </div>
+	</body>
+</html>
